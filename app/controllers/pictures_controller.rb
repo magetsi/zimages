@@ -2,8 +2,9 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-	
-    @first_pic = Picture.first 
+	if Picture.exists?
+		@first_pic = Picture.first 
+	end
 	
 	@pictures = Picture.all
 	respond_to do |format|
