@@ -2,10 +2,9 @@ class PicturesController < ApplicationController
   # GET /pictures
   # GET /pictures.json
   def index
-	if Picture.exists?
-		@first_pic = Picture.first 
-	end
 	
+	@first_pic = Picture.first 
+		
 	@pictures = Picture.all
 	respond_to do |format|
 		format.html # index.html.erb

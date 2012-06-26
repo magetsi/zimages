@@ -1,16 +1,19 @@
 
+  <!-- This script preloads all the picture urls and attributes so we can show them once we need them. -->
   <script type="text/javascript">
   <!--  
   var c = 0;
   var zimages = new Array();
   var descs = new Array();
   var theids = new Array();
-    
-  <% @pictures.each do |picture| %>
+  
+ <% @pictures.each do |picture| %>
 		zimages[c] = new Image();
+		zimages[c].src = "<%= picture.url %>"	
+		
 		theids[c] = "<%= picture.id %>"
 		descs[c] = "<%= picture.description %>"
-		zimages[c].src = "<%= picture.url %>"		
+	
 		c++;
   <% end %>
   //-->
@@ -19,10 +22,11 @@
  
   
 <h1>Zimbabwe in Pictures</h1>
+<!-- show the first picture from the table which has been loaded by the Rails statement @first_pic = Picture.first in pictures_controller.rb -->
 
 <img src="<%= @first_pic.url %>" name="slide" width="800px" />
 <strong><p id="picture_description"><%= @first_pic.description %></p></strong>
-<small><a id="picture_id" href="/pictures/<%= @first_pic.id %>/edit">edit</a></small>
+<small><a id="picture_id" href="/pictures/<%= @first_pic.id %>/edit/">edit</a></small>
 
 
 
@@ -36,7 +40,7 @@
 		setTimeout("slideit()",5000)	
 		document.images.slide.src= zimages[step].src
 		document.getElementById('picture_description').innerHTML = descs[step]
-		document.getElementById('picture_id').href = theids[step]
+		document.getElementById('picture_id').href = "/pictures/" + theids[step] + "/edit/"
 		if (step<c)
 			step++
 		else
