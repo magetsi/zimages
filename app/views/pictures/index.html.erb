@@ -36,8 +36,8 @@
 	var step=1;
 	c--;
 	function slideit(){
-		//call function "slideit()" every 5 seconds
-		setTimeout("slideit()",5000)	
+		//call function "slideit()" every 10 seconds
+		setTimeout("slideit()",10000)	
 		document.images.slide.src= zimages[step].src
 		document.getElementById('picture_description').innerHTML = descs[step]
 		document.getElementById('picture_id').href = "/pictures/" + theids[step] + "/edit/"

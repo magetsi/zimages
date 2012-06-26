@@ -36328,3 +36328,50 @@ Served asset /pictures.js - 304 Not Modified (0ms)
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 14:09:43 -0600
 Served asset /application.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/children_walking_by_field.jpg" for 127.0.0.1 at 2012-06-26 14:13:20 -0600
+Served asset /children_walking_by_field.jpg - 304 Not Modified (0ms)
+
+
+Started GET "/pictures/new" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Processing by PicturesController#new as HTML
+  Rendered pictures/_form.html.erb (8.0ms)
+  Rendered pictures/new.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 63ms (Views: 62.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /home.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /application.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/pictures.css?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /pictures.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /jquery.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /home.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/pictures.js?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /pictures.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2012-06-26 14:13:22 -0600
+Served asset /application.js - 304 Not Modified (2ms)
